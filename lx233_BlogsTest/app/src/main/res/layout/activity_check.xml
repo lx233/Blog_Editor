@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_for_check"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/t_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="标题内容"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="394dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+    <TextView
+        android:id="@+id/read_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阅读(21)  " />
+    <TextView
+        android:id="@+id/like_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点赞(0)" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/t_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="right"
+
+        android:text="日期" />
+</LinearLayout>
+
+
+            <com.scrat.app.richtext.RichEditText
+                android:id="@+id/t_passage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="正文内容"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="40dp"
+                android:textColor="#d2000000"
+                android:textSize="18sp" />
+            <!-- 为了解决图片读取问题换成了上面
+            <TextView
+                android:id="@+id/t_passage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="正文内容"
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="40dp"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                />
+            -->
+        </LinearLayout>
+    </ScrollView>
+    >
+</LinearLayout>

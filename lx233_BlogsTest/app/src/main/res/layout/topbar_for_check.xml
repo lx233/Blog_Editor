@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="52dp"
+android:background="#32c6f1"
+    >
+<TextView
+    android:id="@+id/editingText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:ellipsize="marquee"
+    android:gravity="center_horizontal|center"
+    android:singleLine="true"
+    android:text="博客查看"
+    android:textColor="#ffffffff"
+    android:textSize="20dp"
+
+    />
+
+<Button
+    android:id="@+id/back"
+    android:layout_width="80dp"
+    android:layout_height="match_parent"
+    android:drawablePadding="6dp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:paddingLeft="5dp"
+    android:singleLine="true"
+    android:text="返回"
+    android:textColor="#ffffffff"
+    android:textSize="18dp"
+    android:background="#32c6f1"
+
+    />
+
+<Button
+    android:id="@+id/to_edit"
+    android:layout_width="80dp"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:drawablePadding="6dp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:singleLine="true"
+    android:text="编辑"
+    android:textSize="18dp"
+    android:textColor="#ffffffff"
+    android:background="#32c6f1"
+
+    />
+
+</RelativeLayout>
